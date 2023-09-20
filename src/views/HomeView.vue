@@ -1,14 +1,14 @@
 <script setup>
 import { onMounted, reactive, ref } from 'vue';
-import ListPokemons from '../components/ListPokemons.vue';
-let baseUrlSvg = ref("https://raw.githubusercontent.com/PokeApi/sprites/master/sprites/pokemon/other/dream-world/")
-let pokemons = reactive(ref());
+import ListPersonagens from '../components/ListPersonagens.vue';
+let personagens = reactive(ref());
+const count = 20;
 
 onMounted(() =>{
-  fetch("https://pokeapi.co/api/v2/pokemon/?limit=20&offset=0")
+  fetch("https://rickandmortyapi.com/api/character?limit=20&offset=0")
   .then(response => response.json())
   .then(response => {
-    pokemons.value = response.results;
+    personagens.value = response.results;
     console.log(response);
   })
 })
@@ -20,29 +20,29 @@ onMounted(() =>{
     <div class="row mt-4">
       <div class="col-sm-12 col-md-6">
         <div class="card" style="width: 18rem;">
-          <img src="https://assets.pokemon.com/assets/cms2/img/pokedex/full/001.png" class="card-img-top" alt="...">
+          <img src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" class="card-img-top" alt="...">
           <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-            <a href="#" class="btn btn-primary">Detalhes</a>
+            <h5 class="card-title">Rick And Morty</h5>
+            <p class="card-text">Api rick and morty</p>
           </div>
         </div>
       </div>
       <div class="col-sm-12 col-md-6">
         <div class="card">
           <div class="card-body row">
-        <ListPokemons
-        v-for="pokemon in pokemons"
-        :key="pokemon.name"
-        :name="pokemon.name"
-        :url="pokemon.url"
-        
-        
-        />
+            <ListPersonagens
+              v-for="(person) in personagens"
+              :personagemKey="person.id"
+              :personagemNome="person.name"
+              :personagemStatus="person.status"
+              
+            />
       </div>
+      
         </div>
           </div>
     </div>
+    
   </div>
   </main>
 </template>

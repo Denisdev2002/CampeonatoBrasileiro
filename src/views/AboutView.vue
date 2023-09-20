@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>This is an about page</h1>
+    <h1>Esta página tem como intuituo mostrar alguns dos personagens da série animada rick and morty e alguns dos seus principais dados.</h1>
   </div>
 </template>
 
@@ -9,7 +9,10 @@
   .about {
     min-height: 100vh;
     display: flex;
-    align-items: center;
+    align-items: top;
   }
+}
+h1{
+  font-size: 25px;
 }
 </style>

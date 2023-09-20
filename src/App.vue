@@ -3,16 +3,55 @@ import {ref} from 'vue'
 
 let num = ref(0)
 </script>
-
+<!-- <template>
+  <div id="app">
+  <button
+  type="button"
+  class="btn"
+  @click=”showModal”
+  >
+  Open Modal!
+  </button>
+  <Modal
+  v-show="isModalVisible"
+  @close="closeModal"
+  />
+  </div>
+  </template> -->
+  <!-- <script>
+  import Modal from '../components/Modal.vue';
+  export default {
+  name: 'app',
+  components: {
+  Modal,
+  },
+  data() {
+  return {
+  isModalVisible: false,
+  };
+  },
+  methods: {
+  showModal() {
+  this.isModalVisible = true;
+  },
+  closeModal() {
+  this.isModalVisible = false;
+  }
+  }
+  };
+  </script> -->
 <template>
- <nav class=" navbar navbar-expand-lg navbar-dark bg-dark border-bottom border-body">
+ <nav class=" navbar navbar-expand-lg navbar-white bg-white border-bottom border-body">
     <div class="container-fluid">
-      <router-link to="/" class="navbar-brand">Pokedex</router-link>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
+          <li class="nav-item">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6M2R7iMFqz_MN0W-jcQWsFzcq7L47YfwysWdfyh9xmQ&s" class="card-img-top" alt="..."
+            height="60">
+          </li>
+          <li class="nav-item">
+            <router-link to="/" class="navbar-brand">Rick and Morty</router-link>
+          </li>
           <li class="nav-item">
             <router-link to="/" class="nav-link" aria-current="page">Home</router-link>
           </li>
@@ -21,6 +60,10 @@ let num = ref(0)
           </li>
         </ul>
       </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
     </div>
  </nav>
  <div class="main">
@@ -44,5 +87,6 @@ footer{
   justify-content: center;
   height: 56px;
 }
+
 </style>
 
