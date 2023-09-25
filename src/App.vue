@@ -3,43 +3,7 @@ import {ref} from 'vue'
 
 let num = ref(0)
 </script>
-<!-- <template>
-  <div id="app">
-  <button
-  type="button"
-  class="btn"
-  @click=”showModal”
-  >
-  Open Modal!
-  </button>
-  <Modal
-  v-show="isModalVisible"
-  @close="closeModal"
-  />
-  </div>
-  </template> -->
-  <!-- <script>
-  import Modal from '../components/Modal.vue';
-  export default {
-  name: 'app',
-  components: {
-  Modal,
-  },
-  data() {
-  return {
-  isModalVisible: false,
-  };
-  },
-  methods: {
-  showModal() {
-  this.isModalVisible = true;
-  },
-  closeModal() {
-  this.isModalVisible = false;
-  }
-  }
-  };
-  </script> -->
+
 <template>
  <nav class=" navbar navbar-expand-lg navbar-white bg-white border-bottom border-body">
     <div class="container-fluid">
