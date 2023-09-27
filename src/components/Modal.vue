@@ -44,14 +44,15 @@ onMounted(() => {
             type="button"
             class="btn btn-secondary"
             data-bs-dismiss="modal"
-            @click="close()"
+            @click="hide()"
             >
             Fechar
           </button>
   
           <button
            type="button"
-           class="btn btn-primary" 
+           class="btn btn-primary"
+           @click="ok()" 
            >
            Ver detalhes
           </button>

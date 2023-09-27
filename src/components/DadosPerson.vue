@@ -6,10 +6,10 @@ const characterPerson = defineProps(["characterName","characterStatus","characte
 <template>
   <div class="modal-body">
     <p>
-      Nome : {{characterName}}
-      Status : {{ characterStatus }}
-      Specie : {{ characterSpecie }}
-      Gender : {{ characterGender }}
+      Nome : {{characterName}} <br>
+      Status : {{ characterStatus }} <br>
+      Specie : {{ characterSpecie }} <br>
+      Gender : {{ characterGender }} <br>
     </p>
 
   </div>

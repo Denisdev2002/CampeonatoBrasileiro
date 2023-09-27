@@ -27,7 +27,7 @@ let imageUrl = "https://rickandmortyapi.com/api/character/avatar/";
             <img :src="imageUrl + personagemKey + '.jpeg'" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title" >{{ personagemNome }}</h5>
-                <button type="button" class="btn btn-primary" @click="showModal" >Ver</button>
+                <button type="button" class="btn btn-primary" @click="showModal"  >Ver</button>
                 <Modal @algoModal-click="algoModal">
               
               </Modal>
