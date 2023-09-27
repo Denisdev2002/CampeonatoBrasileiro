@@ -1,6 +1,6 @@
 <template>
   <div class="about">
-    <h1>Esta página tem como intuituo mostrar alguns dos personagens da série animada rick and morty e alguns dos seus principais dados.</h1>
+    <h1>Esta página tem como intuito mostrar alguns dos personagens da série animada rick and morty e alguns dos seus principais dados.</h1>
   </div>
 </template>
 

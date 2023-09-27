@@ -17,7 +17,7 @@ const algoModal = () => {
 }
 const person = defineProps(["personagemKey","personagemNome","personagemStatus"]);
 let imageUrl = "https://rickandmortyapi.com/api/character/avatar/";
-let personCharacter = "https://rickandmortyapi.com/api/character/";
+// let personCharacter = "https://rickandmortyapi.com/api/character/";
 </script>
 
 <template>

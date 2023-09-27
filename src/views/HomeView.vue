@@ -21,10 +21,10 @@ onMounted(() => {
       <div class="row mt-4">
         <div class="col-sm-12 col-md-6">
           <div class="card" style="width: 18rem;">
-            <img src="https://rickandmortyapi.com/api/character/avatar/361.jpeg" class="card-img-top" alt="...">
+            <img src="https://sm.ign.com/ign_br/tv/r/rick-morty/rick-morty_cs71.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Rick And Morty</h5>
-              <p class="card-text">Api rick and morty</p>
+              <p class="card-text">Api da serie de animação rick and morty</p>
             </div>
           </div>
         </div>
@@ -32,7 +32,7 @@ onMounted(() => {
           <div class="card">
             <div class="card-body row">
               <ListPersonagens v-for="(person) in personagens" :personagemKey="person.id" :personagemNome="person.name"
-                :personagemStatus="person.status" />
+                :personagemStatus="person.name" />
             </div>
 
           </div>

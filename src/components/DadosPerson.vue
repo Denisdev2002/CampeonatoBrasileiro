@@ -19,19 +19,9 @@ let personCharacter = "https://rickandmortyapi.com/api/character/";
 
 </style>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="modal-dialog modal-dialog-scrollable">
     ...
   </div> -->
+  <template>
+    Olá
+  </template>
