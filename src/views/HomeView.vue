@@ -31,8 +31,10 @@ onMounted(() => {
         <div class="col-sm-12 col-md-6">
           <div class="card">
             <div class="card-body row">
-              <ListPersonagens v-for="(person) in personagens" :personagemKey="person.id" :personagemNome="person.name"
-                :personagemStatus="person.name" />
+              <ListPersonagens v-for="(person) in personagens"
+               :personagemKey="person.id"
+               :personagemNome="person.name"
+               :personagemStatus="person.name" />
             </div>
 
           </div>

@@ -1,5 +1,7 @@
-<script>
+<script setup>
+import Dados from './DadosPerson.vue';
 import { onMounted, reactive, ref } from 'vue';
+// const characterPerson = defineProps(["characterName","characterStatus","characterSpecie","characterGender"]);
 let character = reactive(ref());
 onMounted(() => {
   fetch("https://rickandmortyapi.com/api/character?limit=20&offset=0")
@@ -26,11 +28,14 @@ onMounted(() => {
         </div>
         <div class="modal-body" >  
           <p>
-              Nome : <br>
-              Status : <br>
-              Especie : <br>
-              Gênero : <br>
-
+            <Dados v-for="char in character"
+            :characterName = char.name
+            :characterStatus = char.status
+            :characterSpecie = char.species
+            :characterGender = char.gender        
+            >
+            </Dados>
+            
 
             </p>   
         </div>
